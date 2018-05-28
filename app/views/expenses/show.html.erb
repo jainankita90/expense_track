@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Member name:</strong>
+  <%= @expense.member_name.join("|") %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @expense.amount %>
+</p>
+
+<p>
+  <strong>User event:</strong>
+  <%= @expense.user_event_id %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @expense.category.name %>
+</p>
+
+<%= link_to 'Edit', edit_expense_path(@expense) %> |
+<%= link_to 'Back', expenses_path %>
